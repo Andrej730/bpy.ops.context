@@ -3,21 +3,23 @@ title: bpy.ops.context
 layout: default
 ---
 
-# bpy.ops Python API documentation.
+# bpy.ops Python API documentation
 
-### `object.convert`:
+Repository - <https://github.com/Andrej730/bpy.ops.context>
+
+<h3 id="object.convert"><code>object.convert</code></h3>
 
 * ✅ context override
 * can be overridden using `selected_editable_objects`
 * active object is not affected
 
-### `object.make_single_user` :
+<h3 id="object.make_single_user"><code>object.make_single_user</code></h3>
 
 * ❌ context override
 * check view layer selected objects explicitly
 * active object is not affected
 
-### `object.transform_apply`:
+<h3 id="object.transform_apply"><code>object.transform_apply</code></h3>
 
 * ✅ context override
 * can be overridden using `selected_editable_objects`
