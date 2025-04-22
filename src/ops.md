@@ -1,3 +1,9 @@
+### `mesh.separate`:
+
+* TAG_CONTEXT_OVERRIDE_SUPPORT
+* can be overridden using `selected_editable_objects`
+* TAG_ACTIVE_OBJECT_NOT_AFFECTED
+
 ### `object.convert`:
 
 * TAG_CONTEXT_OVERRIDE_SUPPORT

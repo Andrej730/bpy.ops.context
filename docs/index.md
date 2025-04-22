@@ -7,6 +7,12 @@ layout: default
 
 Repository - <https://github.com/Andrej730/bpy.ops.context>
 
+<h3 id="mesh.separate"><code>mesh.separate</code></h3>
+
+* ✅ context override
+* can be overridden using `selected_editable_objects`
+* active object is not affected
+
 <h3 id="object.convert"><code>object.convert</code></h3>
 
 * ✅ context override
