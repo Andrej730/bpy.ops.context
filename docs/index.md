@@ -25,6 +25,13 @@ Repository - <https://github.com/Andrej730/bpy.ops.context>
 * check view layer selected objects explicitly
 * active object is not affected
 
+<h3 id="object.mode_set"><code>object.mode_set</code></h3>
+
+* POLL: `active_object` is required and it should be EDITable
+* ❌ context override
+* check view layer active object explicitly
+* check view layer selected objects explicitly (non-EDITable objects are ignored)
+
 <h3 id="object.transform_apply"><code>object.transform_apply</code></h3>
 
 * ✅ context override
