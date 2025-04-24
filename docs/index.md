@@ -18,6 +18,8 @@ Repository - <https://github.com/Andrej730/bpy.ops.context>
 * ✅ context override
 * can be overridden using `selected_editable_objects`
 * active object is not affected
+* newly added objects are selected (original objects selection status is not affected)
+* newly objects (and their data) retain props from original separated objects (and their data)
 
 <h3 id="object.convert"><code>object.convert</code></h3>
 

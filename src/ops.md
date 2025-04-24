@@ -8,6 +8,8 @@
 * TAG_CONTEXT_OVERRIDE_SUPPORT
 * can be overridden using `selected_editable_objects`
 * TAG_ACTIVE_OBJECT_NOT_AFFECTED
+* newly added objects are selected (original objects selection status is not affected)
+* newly objects (and their data) retain props from original separated objects (and their data)
 
 ### `object.convert`:
 
