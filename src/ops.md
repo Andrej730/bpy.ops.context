@@ -1,3 +1,8 @@
+### `mesh.primitive_cube_add`:
+* TAG_CONTEXT_NOT_USED
+* clear previous selection
+* newly added object is set as active and selected
+
 ### `mesh.separate`:
 
 * TAG_CONTEXT_OVERRIDE_SUPPORT

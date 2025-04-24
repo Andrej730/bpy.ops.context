@@ -7,6 +7,12 @@ layout: default
 
 Repository - <https://github.com/Andrej730/bpy.ops.context>
 
+<h3 id="mesh.primitive_cube_add"><code>mesh.primitive_cube_add</code></h3>
+
+* ⬜ context is not used
+* clear previous selection
+* newly added object is set as active and selected
+
 <h3 id="mesh.separate"><code>mesh.separate</code></h3>
 
 * ✅ context override
