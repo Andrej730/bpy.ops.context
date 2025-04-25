@@ -23,7 +23,7 @@
 * check view layer selected objects explicitly
 * TAG_ACTIVE_OBJECT_NOT_AFFECTED
 
-### `bpy.ops.object.editmode_toggle`:
+### `object.editmode_toggle`:
 
 * POLL: `active_object` is required and it should be EDITable
 * `temp_override(active_object)` is causing a crash (4.4.1). See [issue 137998](https://projects.blender.org/blender/blender/issues/137998).
