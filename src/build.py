@@ -1,5 +1,6 @@
 import markdown
 import pystache
+from typing import Union
 from html2text import html2text
 from lxml import html, etree
 from pathlib import Path
@@ -33,8 +34,9 @@ def main():
         op_description = ""
         list_item: html.HtmlElement
         for list_item in op_list.xpath("li"):
-            text: str = list_item.text
-            if text.startswith("TAG_"):
+            text: Union[str, None] = list_item.text
+            # Seems to be `None` when item starts with `<code>`.
+            if text is not None and text.startswith("TAG_"):
                 assert text in TAGS, f"Unknown tag: '{text}'."
                 md_text = f"* {TAGS[text]}"
             else:
