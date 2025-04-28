@@ -38,7 +38,8 @@ Repository - <https://github.com/Andrej730/bpy.ops.context>
 * POLL: `active_object` is required and it should be EDITable
 * ✅ context override
 * can be overridden using `selected_editable_objects` and `active_object`
-* non-EDITable objects are ignored from `selected_editable_objects`
+* objects that don&#x27;t match `active_object` type are ignored from `selected_editable_objects`  
+(e.g. Curves when Mesh is active)
 * active object is the join target and it should also be selected
 
 <h3 id="object.make_single_user"><code>object.make_single_user</code></h3>

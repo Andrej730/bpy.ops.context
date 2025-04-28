@@ -28,7 +28,8 @@
 * POLL: `active_object` is required and it should be EDITable
 * TAG_CONTEXT_OVERRIDE_SUPPORT
 * can be overridden using `selected_editable_objects` and `active_object`
-* non-EDITable objects are ignored from `selected_editable_objects`
+* objects that don't match `active_object` type are ignored from `selected_editable_objects`  
+(e.g. Curves when Mesh is active)
 * active object is the join target and it should also be selected
 
 ### `object.make_single_user`:
