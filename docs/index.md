@@ -33,6 +33,14 @@ Repository - <https://github.com/Andrej730/bpy.ops.context>
 * `temp_override(active_object)` is causing a crash (4.4.1). See [issue 137998](https://projects.blender.org/blender/blender/issues/137998).
 * The rest is undocumented because of the crash
 
+<h3 id="object.join"><code>object.join</code></h3>
+
+* POLL: `active_object` is required and it should be EDITable
+* ✅ context override
+* can be overridden using `selected_editable_objects` and `active_object`
+* non-EDITable objects are ignored from `selected_editable_objects`
+* active object is the join target and it should also be selected
+
 <h3 id="object.make_single_user"><code>object.make_single_user</code></h3>
 
 * ❌ context override

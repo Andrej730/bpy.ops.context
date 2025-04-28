@@ -23,6 +23,14 @@
 * `temp_override(active_object)` is causing a crash (4.4.1). See [issue 137998](https://projects.blender.org/blender/blender/issues/137998).
 * The rest is undocumented because of the crash
 
+### `object.join`:
+
+* POLL: `active_object` is required and it should be EDITable
+* TAG_CONTEXT_OVERRIDE_SUPPORT
+* can be overridden using `selected_editable_objects` and `active_object`
+* non-EDITable objects are ignored from `selected_editable_objects`
+* active object is the join target and it should also be selected
+
 ### `object.make_single_user`:
 
 * TAG_CONTEXT_OVERRIDE_NOT_SUPPORTED
