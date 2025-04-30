@@ -30,8 +30,9 @@ Repository - <https://github.com/Andrej730/bpy.ops.context>
 <h3 id="object.editmode_toggle"><code>object.editmode_toggle</code></h3>
 
 * POLL: `active_object` is required and it should be EDITable
-* `temp_override(active_object)` is causing a crash (4.4.1). See [issue 137998](https://projects.blender.org/blender/blender/issues/137998).
-* The rest is undocumented because of the crash
+* ❌ context override
+* check view layer active object explicitly
+* check view layer selected objects explicitly (non-EDITable objects are ignored)
 
 <h3 id="object.join"><code>object.join</code></h3>
 
