@@ -7,6 +7,15 @@ layout: default
 
 Repository - <https://github.com/Andrej730/bpy.ops.context>
 
+<h3 id="clip.add_marker"><code>clip.add_marker</code></h3>
+
+* POLL_INTERNAL: `ED_space_clip_tracking_poll`
+* POLL:
+* 📋 `area.type` == `CLIP_EDITOR`
+* 📋 `area.spaces.active.clip` is not `None`
+* 📋 `area.spaces.active.mode` == `TRACKING`
+* ✅ context override
+
 <h3 id="mesh.primitive_cube_add"><code>mesh.primitive_cube_add</code></h3>
 
 * ⬜ context is not used
