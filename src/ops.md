@@ -65,3 +65,10 @@
 * TAG_CONTEXT_OVERRIDE_SUPPORT
 * can be overridden using `selected_editable_objects`
 * TAG_ACTIVE_OBJECT_NOT_AFFECTED
+
+### `outliner.delete`:
+
+* POLL: `area.type` == `OUTLINER`
+* TAG_CONTEXT_OVERRIDE_NOT_SUPPORTED
+* check outliner tree for selected IDs explicitly (ignore `selected_ids`)
+* TAG_ACTIVE_OBJECT_NOT_AFFECTED

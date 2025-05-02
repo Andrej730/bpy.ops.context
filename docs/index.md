@@ -76,3 +76,10 @@ Repository - <https://github.com/Andrej730/bpy.ops.context>
 * ✅ context override
 * can be overridden using `selected_editable_objects`
 * active object is not affected
+
+<h3 id="outliner.delete"><code>outliner.delete</code></h3>
+
+* POLL: `area.type` == `OUTLINER`
+* ❌ context override
+* check outliner tree for selected IDs explicitly (ignore `selected_ids`)
+* active object is not affected
