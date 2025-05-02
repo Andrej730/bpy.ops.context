@@ -25,6 +25,12 @@
 * can be overridden using `selected_editable_objects`
 * TAG_ACTIVE_OBJECT_NOT_AFFECTED
 
+### `object.delete`:
+
+* TAG_CONTEXT_OVERRIDE_SUPPORT
+* can be overridden using `selected_objects`
+* TAG_ACTIVE_OBJECT_NOT_AFFECTED
+
 ### `object.editmode_toggle`:
 
 * POLL: `active_object` is required and it should be EDITable

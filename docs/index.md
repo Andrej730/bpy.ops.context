@@ -36,6 +36,12 @@ Repository - <https://github.com/Andrej730/bpy.ops.context>
 * can be overridden using `selected_editable_objects`
 * active object is not affected
 
+<h3 id="object.delete"><code>object.delete</code></h3>
+
+* ✅ context override
+* can be overridden using `selected_objects`
+* active object is not affected
+
 <h3 id="object.editmode_toggle"><code>object.editmode_toggle</code></h3>
 
 * POLL: `active_object` is required and it should be EDITable
