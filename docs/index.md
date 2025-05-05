@@ -24,11 +24,18 @@ Repository - <https://github.com/Andrej730/bpy.ops.context>
 
 <h3 id="mesh.separate"><code>mesh.separate</code></h3>
 
+* In OBJECT mode:
 * ✅ context override
-* can be overridden using `selected_editable_objects`
-* active object is not affected
-* newly added objects are selected (original objects selection status is not affected)
-* newly objects (and their data) retain props from original separated objects (and their data)
+* 📋 can be overridden using `selected_editable_objects`
+* 📋 TAG_ACTIVE_OBJECT_NOT_AFFECTED
+* In EDIT_MESH mode:
+* ❌ context override
+* 📋 basically it affects `context.objects_in_mode`, but doesn&#x27;t use this actual context member
+* 📋 therefore it ignores selected objects that are in OBJECT mode, doesn&#x27;t require explicit selection and skips hidden objects
+* 📋 &#x27;by selection&#x27; separates selection for each object separately (e.g. if 1 face selected in N objects results in N separated objects)
+* In both modes:
+* 📋 newly added objects are selected (original objects selection status is not affected)
+* 📋 newly objects (and their data) retain props from original separated objects (and their data)
 
 <h3 id="object.convert"><code>object.convert</code></h3>
 
