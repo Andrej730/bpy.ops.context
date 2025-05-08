@@ -88,5 +88,6 @@
 * 📋`area.type` == `VIEW_3D`
 * 📋`region` = region from `area.regions` with type `WINDOW`
 * 📋 active scene `camera` should not be `None`
+* 📋 viewport is not in camera view (`RegionView3D.view_perspective` != `CAMERA`)
 * TAG_CONTEXT_OVERRIDE_SUPPORT
 * updates camera view for the scene's active camera

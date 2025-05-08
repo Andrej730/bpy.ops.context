@@ -98,5 +98,6 @@ Repository - <https://github.com/Andrej730/bpy.ops.context>
 * 📋`area.type` == `VIEW_3D`
 * 📋`region` = region from `area.regions` with type `WINDOW`
 * 📋 active scene `camera` should not be `None`
+* 📋 viewport is not in camera view (`RegionView3D.view_perspective` != `CAMERA`)
 * ✅ context override
 * updates camera view for the scene&#x27;s active camera
