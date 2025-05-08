@@ -80,3 +80,13 @@
 * TAG_CONTEXT_OVERRIDE_NOT_SUPPORTED
 * check outliner tree for selected IDs explicitly (ignore `selected_ids`)
 * TAG_ACTIVE_OBJECT_NOT_AFFECTED
+
+### `view3d.camera_to_view`:
+
+* POLL_INTERNAL: `view3d_camera_to_view_poll`
+* POLL:
+* 📋`area.type` == `VIEW_3D`
+* 📋`region` = region from `area.regions` with type `WINDOW`
+* 📋 active scene `camera` should not be `None`
+* TAG_CONTEXT_OVERRIDE_SUPPORT
+* updates camera view for the scene's active camera

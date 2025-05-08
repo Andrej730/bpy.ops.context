@@ -90,3 +90,13 @@ Repository - <https://github.com/Andrej730/bpy.ops.context>
 * ❌ context override
 * check outliner tree for selected IDs explicitly (ignore `selected_ids`)
 * active object is not affected
+
+<h3 id="view3d.camera_to_view"><code>view3d.camera_to_view</code></h3>
+
+* POLL_INTERNAL: `view3d_camera_to_view_poll`
+* POLL:
+* 📋`area.type` == `VIEW_3D`
+* 📋`region` = region from `area.regions` with type `WINDOW`
+* 📋 active scene `camera` should not be `None`
+* ✅ context override
+* updates camera view for the scene&#x27;s active camera
