@@ -1,9 +1,9 @@
 ### `clip.add_marker`
 * POLL_INTERNAL: `ED_space_clip_tracking_poll`
 * POLL:
-- 📋 `area.type` == `CLIP_EDITOR`
-- 📋 `area.spaces.active.clip` is not `None`
-- 📋 `area.spaces.active.mode` == `TRACKING`
+* 📋 `area.type` == `CLIP_EDITOR`
+* 📋 `area.spaces.active.clip` is not `None`
+* 📋 `area.spaces.active.mode` == `TRACKING`
 * TAG_CONTEXT_OVERRIDE_SUPPORT
 
 ### `mesh.primitive_cube_add`:
