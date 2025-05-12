@@ -46,6 +46,16 @@
 * check view layer active object explicitly
 * check view layer selected objects explicitly (non-EDITable objects are ignored)
 
+### `object.hide_view_set`
+* POLL_INTERNAL: `object_hide_poll`
+* POLL:
+* 📋 `area.type` == `VIEW_3D`
+* 📋 or (`area.type` == `OUTLINER` and `area.spaces.active.display_mode` in `('SCENES', 'VIEW_LAYER', 'LIBRARIES')`)
+* TAG_CONTEXT_OVERRIDE_NOT_SUPPORTED
+* hide selected/unselected objects in viewport (EYE icon)
+* check view layer selected objects explicitly
+* TAG_ACTIVE_OBJECT_NOT_AFFECTED
+
 ### `object.join`:
 
 * POLL: `active_object` is required and it should be EDITable

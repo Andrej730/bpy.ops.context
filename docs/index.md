@@ -56,6 +56,17 @@ Repository - <https://github.com/Andrej730/bpy.ops.context>
 * check view layer active object explicitly
 * check view layer selected objects explicitly (non-EDITable objects are ignored)
 
+<h3 id="object.hide_view_set"><code>object.hide_view_set</code></h3>
+
+* POLL_INTERNAL: `object_hide_poll`
+* POLL:
+* 📋 `area.type` == `VIEW_3D`
+* 📋 or (`area.type` == `OUTLINER` and `area.spaces.active.display_mode` in `(&#x27;SCENES&#x27;, &#x27;VIEW_LAYER&#x27;, &#x27;LIBRARIES&#x27;)`)
+* ❌ context override
+* hide selected/unselected objects in viewport (EYE icon)
+* check view layer selected objects explicitly
+* active object is not affected
+
 <h3 id="object.join"><code>object.join</code></h3>
 
 * POLL: `active_object` is required and it should be EDITable
