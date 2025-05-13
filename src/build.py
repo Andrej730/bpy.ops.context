@@ -8,6 +8,7 @@ from util import cprint
 
 TAGS = {
     "TAG_CONTEXT_NOT_USED": "⬜ context is not used",
+    "TAG_CONTEXT_OVERRIDE_SUPPORT_PARTIAL": "🧩 partial context override",
     "TAG_CONTEXT_OVERRIDE_SUPPORT": "✅ context override",
     "TAG_CONTEXT_OVERRIDE_NOT_SUPPORTED": "❌ context override",
     "TAG_ACTIVE_OBJECT_NOT_AFFECTED": "active object is not affected",

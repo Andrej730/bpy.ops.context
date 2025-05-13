@@ -78,6 +78,17 @@
 * check view layer active object explicitly
 * check view layer selected objects explicitly (non-EDITable objects are ignored)
 
+### `object.select_all`
+* POLL_INTERNAL: `objects_selectable_poll`
+* POLL:
+* 📋 `context.edit_object` is `None`
+* 📋 and (`context.active_object` is `None` or `context.active_object.mode` == `OBJECT`)
+* TAG_CONTEXT_OVERRIDE_SUPPORT_PARTIAL
+* context override only supported for passing poll check
+* manipulate view layer objects selection explicitly
+* return `FINISHED` if there were any changes in selection
+* return `PASS_THROUGH` if there were no changes but no objects are visible, otherwise return `CANCELLED`
+
 ### `object.transform_apply`:
 
 * TAG_CONTEXT_OVERRIDE_SUPPORT

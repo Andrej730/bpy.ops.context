@@ -89,6 +89,18 @@ Repository - <https://github.com/Andrej730/bpy.ops.context>
 * check view layer active object explicitly
 * check view layer selected objects explicitly (non-EDITable objects are ignored)
 
+<h3 id="object.select_all"><code>object.select_all</code></h3>
+
+* POLL_INTERNAL: `objects_selectable_poll`
+* POLL:
+* 📋 `context.edit_object` is `None`
+* 📋 and (`context.active_object` is `None` or `context.active_object.mode` == `OBJECT`)
+* 🧩 partial context override
+* context override only supported for passing poll check
+* manipulate view layer objects selection explicitly
+* return `FINISHED` if there were any changes in selection
+* return `PASS_THROUGH` if there were no changes but no objects are visible, otherwise return `CANCELLED`
+
 <h3 id="object.transform_apply"><code>object.transform_apply</code></h3>
 
 * ✅ context override
