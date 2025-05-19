@@ -89,6 +89,14 @@ Repository - <https://github.com/Andrej730/bpy.ops.context>
 * check view layer active object explicitly
 * check view layer selected objects explicitly (non-EDITable objects are ignored)
 
+<h3 id="object.modifier_apply"><code>object.modifier_apply</code></h3>
+
+* POLL_INTERNAL: `modifier_apply_poll`
+* POLL: _undocumented_
+* ✅ context override
+* affects just one object - `context.object`
+* active object is not affected, because operator needs to support being applied to pinned object
+
 <h3 id="object.select_all"><code>object.select_all</code></h3>
 
 * POLL_INTERNAL: `objects_selectable_poll`

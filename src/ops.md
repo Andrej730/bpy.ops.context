@@ -78,6 +78,14 @@
 * check view layer active object explicitly
 * check view layer selected objects explicitly (non-EDITable objects are ignored)
 
+### `object.modifier_apply`:
+
+* POLL_INTERNAL: `modifier_apply_poll`
+* POLL: *undocumented*
+* TAG_CONTEXT_OVERRIDE_SUPPORT
+* affects just one object - `context.object`
+* active object is not affected, because operator needs to support being applied to pinned object
+
 ### `object.select_all`
 * POLL_INTERNAL: `objects_selectable_poll`
 * POLL:
