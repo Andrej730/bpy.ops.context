@@ -31,6 +31,7 @@
 
 * TAG_CONTEXT_OVERRIDE_SUPPORT
 * can be overridden using `selected_editable_objects`
+* object is not recreated, even if object type is changed
 * TAG_ACTIVE_OBJECT_NOT_AFFECTED
 
 ### `object.delete`:

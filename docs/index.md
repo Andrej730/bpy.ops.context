@@ -41,6 +41,7 @@ Repository - <https://github.com/Andrej730/bpy.ops.context>
 
 * ✅ context override
 * can be overridden using `selected_editable_objects`
+* object is not recreated, even if object type is changed
 * active object is not affected
 
 <h3 id="object.delete"><code>object.delete</code></h3>
