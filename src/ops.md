@@ -36,6 +36,7 @@
 
 ### `object.delete`:
 
+* POLL: `selected_objects` should not be empty
 * TAG_CONTEXT_OVERRIDE_SUPPORT
 * can be overridden using `selected_objects`
 * TAG_ACTIVE_OBJECT_NOT_AFFECTED

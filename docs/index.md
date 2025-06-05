@@ -46,6 +46,7 @@ Repository - <https://github.com/Andrej730/bpy.ops.context>
 
 <h3 id="object.delete"><code>object.delete</code></h3>
 
+* POLL: `selected_objects` should not be empty
 * ✅ context override
 * can be overridden using `selected_objects`
 * active object is not affected
