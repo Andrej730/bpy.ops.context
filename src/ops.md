@@ -1,3 +1,10 @@
+### `constraint.childof_set_inverse`
+* TAG_CONTEXT_OVERRIDE_SUPPORT
+* 📋 can be overridden using `object` (🛠️`context_active_object()`)
+* 📋 `constraint` context member can be provided to automatically fill operator args `constraint` (constraint name) and `owner`
+* `constraint` is `Constraint` works only if operator started with `.invoke()`
+* `constraint` must be one of the `object` constraints
+
 ### `clip.add_marker`
 * POLL_INTERNAL: `ED_space_clip_tracking_poll`
 * POLL:

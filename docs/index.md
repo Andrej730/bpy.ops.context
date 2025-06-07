@@ -7,6 +7,14 @@ layout: default
 
 Repository - <https://github.com/Andrej730/bpy.ops.context>
 
+<h3 id="constraint.childof_set_inverse"><code>constraint.childof_set_inverse</code></h3>
+
+* ✅ context override
+* 📋 can be overridden using `object` (🛠️`context_active_object()`)
+* 📋 `constraint` context member can be provided to automatically fill operator args `constraint` (constraint name) and `owner`
+* `constraint` is `Constraint` works only if operator started with `.invoke()`
+* `constraint` must be one of the `object` constraints
+
 <h3 id="clip.add_marker"><code>clip.add_marker</code></h3>
 
 * POLL_INTERNAL: `ED_space_clip_tracking_poll`
