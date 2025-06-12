@@ -38,9 +38,9 @@ Repository - <https://github.com/Andrej730/bpy.ops.context>
 * 📋 TAG_ACTIVE_OBJECT_NOT_AFFECTED
 * In EDIT_MESH mode:
 * ❌ context override
-* 📋 basically it affects `context.objects_in_mode`, but doesn&#x27;t use this actual context member
-* 📋 therefore it ignores selected objects that are in OBJECT mode, doesn&#x27;t require explicit selection and skips hidden objects
-* 📋 &#x27;by selection&#x27; separates selection for each object separately (e.g. if 1 face selected in N objects results in N separated objects)
+* 📋 basically it affects `context.objects_in_mode`, but doesn't use this actual context member
+* 📋 therefore it ignores selected objects that are in OBJECT mode, doesn't require explicit selection and skips hidden objects
+* 📋 'by selection' separates selection for each object separately (e.g. if 1 face selected in N objects results in N separated objects)
 * In both modes:
 * 📋 newly added objects are selected (original objects selection status is not affected)
 * 📋 newly objects (and their data) retain props from original separated objects (and their data)
@@ -71,7 +71,7 @@ Repository - <https://github.com/Andrej730/bpy.ops.context>
 * POLL_INTERNAL: `object_hide_poll`
 * POLL:
 * 📋 `area.type` == `VIEW_3D`
-* 📋 or (`area.type` == `OUTLINER` and `area.spaces.active.display_mode` in `(&#x27;SCENES&#x27;, &#x27;VIEW_LAYER&#x27;, &#x27;LIBRARIES&#x27;)`)
+* 📋 or (`area.type` == `OUTLINER` and `area.spaces.active.display_mode` in `('SCENES', 'VIEW_LAYER', 'LIBRARIES')`)
 * ❌ context override
 * hide selected/unselected objects in viewport (EYE icon)
 * check view layer selected objects explicitly
@@ -82,7 +82,7 @@ Repository - <https://github.com/Andrej730/bpy.ops.context>
 * POLL: `active_object` is required and it should be EDITable
 * ✅ context override
 * can be overridden using `selected_editable_objects` and `active_object`
-* objects that don&#x27;t match `active_object` type are ignored from `selected_editable_objects`  
+* objects that don't match `active_object` type are ignored from `selected_editable_objects`  
 (e.g. Curves when Mesh is active)
 * active object is the join target and it should also be selected
 
@@ -139,9 +139,9 @@ Repository - <https://github.com/Andrej730/bpy.ops.context>
 * 📋`context.scene` is set and is editable
 * 🧩 partial context override
 * context override is only supported for passing `area` and `scene`
-* check view layer selected objects explicitly (🛠️`base_flag &amp; BASE_SELECTED`)
-* if `area` with `type` == `VIEW3D` is provided, then `SpaceView3D.camera` is used
-* otherwise, `scene.camera` is used
+* check view layer selected objects explicitly (🛠️`base_flag & BASE_SELECTED`)
+* if `area` with `type` == `VIEW3D` is provided, then `SpaceView3D.camera` is used,  
+otherwise `scene.camera` is used
 
 <h3 id="view3d.camera_to_view"><code>view3d.camera_to_view</code></h3>
 
@@ -152,4 +152,4 @@ Repository - <https://github.com/Andrej730/bpy.ops.context>
 * 📋 active scene `camera` should not be `None`
 * 📋 viewport is not in camera view (`RegionView3D.view_perspective` != `CAMERA`)
 * ✅ context override
-* updates camera view for the scene&#x27;s active camera
+* updates camera view for the scene's active camera

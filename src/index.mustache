@@ -10,5 +10,6 @@ Repository - <https://github.com/Andrej730/bpy.ops.context>
 {{#ops}}
 <h3 id="{{op_name}}"><code>{{op_name}}</code></h3>
 
-{{op_description}}
+{{! Triple braces to avoid '&' rendered as '&amp;' }}
+{{{op_description}}}
 {{/ops}}
