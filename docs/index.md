@@ -132,6 +132,17 @@ Repository - <https://github.com/Andrej730/bpy.ops.context>
 * check outliner tree for selected IDs explicitly (ignore `selected_ids`)
 * active object is not affected
 
+<h3 id="view3d.camera_to_view_selected"><code>view3d.camera_to_view_selected</code></h3>
+
+* POLL_INTERNAL: 🛠️`ED_operator_scene_editable`
+* POLL:
+* 📋`context.scene` is set and is editable
+* 🧩 partial context override
+* context override is only supported for passing `area` and `scene`
+* check view layer selected objects explicitly (🛠️`base_flag &amp; BASE_SELECTED`)
+* if `area` with `type` == `VIEW3D` is provided, then `SpaceView3D.camera` is used
+* otherwise, `scene.camera` is used
+
 <h3 id="view3d.camera_to_view"><code>view3d.camera_to_view</code></h3>
 
 * POLL_INTERNAL: `view3d_camera_to_view_poll`

@@ -119,6 +119,17 @@
 * check outliner tree for selected IDs explicitly (ignore `selected_ids`)
 * TAG_ACTIVE_OBJECT_NOT_AFFECTED
 
+### `view3d.camera_to_view_selected`:
+
+* POLL_INTERNAL: 🛠️`ED_operator_scene_editable`
+* POLL:
+* 📋`context.scene` is set and is editable
+* TAG_CONTEXT_OVERRIDE_SUPPORT_PARTIAL
+* context override is only supported for passing `area` and `scene`
+* check view layer selected objects explicitly (🛠️`base_flag & BASE_SELECTED`)
+* if `area` with `type` == `VIEW3D` is provided, then `SpaceView3D.camera` is used,  
+otherwise `scene.camera` is used
+
 ### `view3d.camera_to_view`:
 
 * POLL_INTERNAL: `view3d_camera_to_view_poll`
