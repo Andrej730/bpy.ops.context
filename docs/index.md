@@ -128,6 +128,7 @@ Repository - <https://github.com/Andrej730/bpy.ops.context>
 
 <h3 id="outliner.delete"><code>outliner.delete</code></h3>
 
+* POLL_INTERNAL: `ED_operator_outliner_active`
 * POLL: `area.type` == `OUTLINER`
 * ❌ context override
 * check outliner tree for selected IDs explicitly (ignore `selected_ids`)

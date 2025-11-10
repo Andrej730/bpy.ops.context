@@ -115,6 +115,7 @@
 
 ### `outliner.delete`:
 
+* POLL_INTERNAL: `ED_operator_outliner_active`
 * POLL: `area.type` == `OUTLINER`
 * TAG_CONTEXT_OVERRIDE_NOT_SUPPORTED
 * check outliner tree for selected IDs explicitly (ignore `selected_ids`)
