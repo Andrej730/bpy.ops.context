@@ -43,7 +43,8 @@
 
 ### `object.delete`:
 
-* POLL: `selected_objects` should not be empty
+* POLL_INTERNAL: `ED_operator_objectmode`
+* POLL: `context.mode` == `OBJECT`
 * TAG_CONTEXT_OVERRIDE_SUPPORT
 * can be overridden using `selected_objects`
 * TAG_ACTIVE_OBJECT_NOT_AFFECTED
