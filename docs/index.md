@@ -60,6 +60,12 @@ Repository - <https://github.com/Andrej730/bpy.ops.context>
 * can be overridden using `selected_objects`
 * active object is not affected
 
+<h3 id="object.duplicate"><code>object.duplicate</code></h3>
+
+* POLL_INTERNAL: `ED_operator_objectmode`
+* POLL: `context.mode` == `OBJECT`
+* ❓ context override and affected objects are not documented
+
 <h3 id="object.editmode_toggle"><code>object.editmode_toggle</code></h3>
 
 * POLL: `active_object` is required and it should be EDITable

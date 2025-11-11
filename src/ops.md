@@ -49,6 +49,12 @@
 * can be overridden using `selected_objects`
 * TAG_ACTIVE_OBJECT_NOT_AFFECTED
 
+### `object.duplicate`:
+
+* POLL_INTERNAL: `ED_operator_objectmode`
+* POLL: `context.mode` == `OBJECT`
+* ❓ context override and affected objects are not documented
+
 ### `object.editmode_toggle`:
 
 * POLL: `active_object` is required and it should be EDITable
