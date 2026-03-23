@@ -1,2 +1,3 @@
 docs/debug.html
 *.pyc
+uv.lock

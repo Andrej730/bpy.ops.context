@@ -1,4 +1,0 @@
-markdown
-lxml
-html2text
-pystache

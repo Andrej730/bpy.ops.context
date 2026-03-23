@@ -1,2 +1,17 @@
+[project]
+name = "bpy-ops-context"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = [
+    "markdown",
+    "lxml",
+    "html2text",
+    "pystache",
+    "poethepoet",
+]
+
+[tool.poe.tasks]
+build = { cmd = "python src/build.py", help = "Build docs from src/ops.md" }
+
 [tool.black]
 line-length = 120
