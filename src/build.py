@@ -22,6 +22,7 @@ INDEX_MD = DOCS / "index.md"
 
 
 def main():
+    DOCS.mkdir(exist_ok=True)
     html_text = markdown.markdown(OPS_MD.read_text(encoding="utf-8"))
     DEBUG_HTML.write_text(html_text, encoding="utf-8")
     tree: html.HtmlElement = html.fromstring(html_text)
