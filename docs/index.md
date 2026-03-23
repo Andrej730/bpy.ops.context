@@ -24,8 +24,74 @@ Repository - <https://github.com/Andrej730/bpy.ops.context>
 * 📋 `area.spaces.active.mode` == `TRACKING`
 * ✅ context override
 
+<h3 id="mesh.primitive_plane_add"><code>mesh.primitive_plane_add</code></h3>
+
+* POLL_INTERNAL: 🛠️`ED_operator_scene_editable`
+* POLL: `context.scene` is set and is editable
+* ⬜ context is not used
+* clear previous selection
+* newly added object is set as active and selected
+
 <h3 id="mesh.primitive_cube_add"><code>mesh.primitive_cube_add</code></h3>
 
+* POLL_INTERNAL: 🛠️`ED_operator_scene_editable`
+* POLL: `context.scene` is set and is editable
+* ⬜ context is not used
+* clear previous selection
+* newly added object is set as active and selected
+
+<h3 id="mesh.primitive_circle_add"><code>mesh.primitive_circle_add</code></h3>
+
+* POLL_INTERNAL: 🛠️`ED_operator_scene_editable`
+* POLL: `context.scene` is set and is editable
+* ⬜ context is not used
+* clear previous selection
+* newly added object is set as active and selected
+
+<h3 id="mesh.primitive_cylinder_add"><code>mesh.primitive_cylinder_add</code></h3>
+
+* POLL_INTERNAL: 🛠️`ED_operator_scene_editable`
+* POLL: `context.scene` is set and is editable
+* ⬜ context is not used
+* clear previous selection
+* newly added object is set as active and selected
+
+<h3 id="mesh.primitive_cone_add"><code>mesh.primitive_cone_add</code></h3>
+
+* POLL_INTERNAL: 🛠️`ED_operator_scene_editable`
+* POLL: `context.scene` is set and is editable
+* ⬜ context is not used
+* clear previous selection
+* newly added object is set as active and selected
+
+<h3 id="mesh.primitive_grid_add"><code>mesh.primitive_grid_add</code></h3>
+
+* POLL_INTERNAL: 🛠️`ED_operator_scene_editable`
+* POLL: `context.scene` is set and is editable
+* ⬜ context is not used
+* clear previous selection
+* newly added object is set as active and selected
+
+<h3 id="mesh.primitive_monkey_add"><code>mesh.primitive_monkey_add</code></h3>
+
+* POLL_INTERNAL: 🛠️`ED_operator_scene_editable`
+* POLL: `context.scene` is set and is editable
+* ⬜ context is not used
+* clear previous selection
+* newly added object is set as active and selected
+
+<h3 id="mesh.primitive_uv_sphere_add"><code>mesh.primitive_uv_sphere_add</code></h3>
+
+* POLL_INTERNAL: 🛠️`ED_operator_scene_editable`
+* POLL: `context.scene` is set and is editable
+* ⬜ context is not used
+* clear previous selection
+* newly added object is set as active and selected
+
+<h3 id="mesh.primitive_ico_sphere_add"><code>mesh.primitive_ico_sphere_add</code></h3>
+
+* POLL_INTERNAL: 🛠️`ED_operator_scene_editable`
+* POLL: `context.scene` is set and is editable
 * ⬜ context is not used
 * clear previous selection
 * newly added object is set as active and selected

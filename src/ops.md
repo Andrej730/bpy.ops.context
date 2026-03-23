@@ -13,7 +13,65 @@
 * 📋 `area.spaces.active.mode` == `TRACKING`
 * TAG_CONTEXT_OVERRIDE_SUPPORT
 
+### `mesh.primitive_plane_add`:
+* POLL_INTERNAL: 🛠️`ED_operator_scene_editable`
+* POLL: `context.scene` is set and is editable
+* TAG_CONTEXT_NOT_USED
+* clear previous selection
+* newly added object is set as active and selected
+
 ### `mesh.primitive_cube_add`:
+* POLL_INTERNAL: 🛠️`ED_operator_scene_editable`
+* POLL: `context.scene` is set and is editable
+* TAG_CONTEXT_NOT_USED
+* clear previous selection
+* newly added object is set as active and selected
+
+### `mesh.primitive_circle_add`:
+* POLL_INTERNAL: 🛠️`ED_operator_scene_editable`
+* POLL: `context.scene` is set and is editable
+* TAG_CONTEXT_NOT_USED
+* clear previous selection
+* newly added object is set as active and selected
+
+### `mesh.primitive_cylinder_add`:
+* POLL_INTERNAL: 🛠️`ED_operator_scene_editable`
+* POLL: `context.scene` is set and is editable
+* TAG_CONTEXT_NOT_USED
+* clear previous selection
+* newly added object is set as active and selected
+
+### `mesh.primitive_cone_add`:
+* POLL_INTERNAL: 🛠️`ED_operator_scene_editable`
+* POLL: `context.scene` is set and is editable
+* TAG_CONTEXT_NOT_USED
+* clear previous selection
+* newly added object is set as active and selected
+
+### `mesh.primitive_grid_add`:
+* POLL_INTERNAL: 🛠️`ED_operator_scene_editable`
+* POLL: `context.scene` is set and is editable
+* TAG_CONTEXT_NOT_USED
+* clear previous selection
+* newly added object is set as active and selected
+
+### `mesh.primitive_monkey_add`:
+* POLL_INTERNAL: 🛠️`ED_operator_scene_editable`
+* POLL: `context.scene` is set and is editable
+* TAG_CONTEXT_NOT_USED
+* clear previous selection
+* newly added object is set as active and selected
+
+### `mesh.primitive_uv_sphere_add`:
+* POLL_INTERNAL: 🛠️`ED_operator_scene_editable`
+* POLL: `context.scene` is set and is editable
+* TAG_CONTEXT_NOT_USED
+* clear previous selection
+* newly added object is set as active and selected
+
+### `mesh.primitive_ico_sphere_add`:
+* POLL_INTERNAL: 🛠️`ED_operator_scene_editable`
+* POLL: `context.scene` is set and is editable
 * TAG_CONTEXT_NOT_USED
 * clear previous selection
 * newly added object is set as active and selected
